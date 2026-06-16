@@ -1,0 +1,6 @@
+vendor_id,vendor_name,address,country,currency,status
+1001,ABC Corp,123 Main St,USA,USD,Active
+1002,XYZ Ltd,456 Oak Ave,UK,GBP,Active
+1003,,789 Pine Rd,USA,USD,Inactive
+1001,ABC Corp,123 Main St,USA,USD,Active
+1004,Global Inc,100 Business Blvd,GER,EUR,Active
