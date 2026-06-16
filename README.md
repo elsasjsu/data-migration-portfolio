@@ -16,6 +16,7 @@ Prepare for and apply to the **Senior Data Migration Consultant** role at **Syni
 ## What’s in This Portfolio
 This repo contains four main projects:
 
+
 1. **01-sap-finance-migration**  
    - Simulated SAP Finance data migration  
    - Data mapping, transformation rules, and reconciliation  
