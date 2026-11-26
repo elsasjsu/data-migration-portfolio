@@ -1,67 +1,88 @@
-# data-migration-portfolio
-Portfolio of data migration, ETL, and data quality projects focused on SAP Finance and SAP PS. Built to demonstrate end-to-end migration skills, SQL/Python ETL pipelines, and data quality workflows for Senior Data Migration Consultant roles at Syniti.
-# Data Migration Portfolio – SAP Finance & PS Projects
+# Data Migration Portfolio – SAP Finance & S/4HANA
 
-## Overview
-This repository is a professional portfolio showcasing data migration, ETL, and data quality projects focused on SAP Finance and SAP Project System (PS). It is designed to demonstrate my ability to handle end-to-end data migration workflows, including data mapping, transformation, reconciliation, and quality assurance.
+Hands-on projects in SAP data migration, data quality and reconciliation, built
+the way real migration projects are delivered: requirements → functional spec →
+build → mock loads → reconciliation → go-live readiness.
 
-## Goal
-Prepare for and apply to the **Senior Data Migration Consultant** role at **Syniti (part of Capgemini)** after graduating in May 2027 with a degree in **MS in Data Analytics**.
+## About Me
 
-## Background
-- 2.5 years of experience as a **Data Consultant at Syniti**  
-- Hands-on project experience with **SAP Finance** and **SAP PS** implementations  
-- Familiarity with Syniti’s data management platform and data migration methodology
+- **Former Data Migration Consultant at Syniti (2021–2023)**: SAP Finance and
+  Project System data migration on client S/4HANA implementations
+- Experience with SAP FICO and PS data, LTMC/LSMW, Syniti ADM, source-to-target
+  mapping, data-quality rules and financial reconciliation
+- **MS in Applied Data Intelligence, San José State University** (expected 2027)
+- Interests: applying AI to speed up migration work while keeping the consultant
+  in control
 
-## What’s in This Portfolio
-This repo contains four main projects:
+## Projects
 
+| # | Project | What it shows | Status |
+|---|---|---|---|
+| 01 | [SAP Finance Migration](01-sap-finance-migration/) | Simulated SAP Finance migration: data mapping, transformation rules and reconciliation (SQL, Python, Excel) | In progress |
+| 02 | [AI-Assisted Data Migration](02-ai-assisted-migration/) | End-to-end ECC → S/4HANA migration of customers, vendors and open AR/AP items, with AI-suggested mappings and rules approved by the consultant | In progress – target Jan 2027 |
 
-1. **01-sap-finance-migration**  
-   - Simulated SAP Finance data migration  
-   - Data mapping, transformation rules, and reconciliation  
-   - Tools: SQL Server, Python (pandas), Excel
+## Featured: 02 – AI-Assisted Data Migration
 
-2. **02-erp-etl-pipeline**  
-   - End-to-end ETL pipeline for ERP data  
-   - Extract–Transform–Load with data quality checks  
-   - Tools: Python, SQL, Apache Airflow (optional)
+**Scenario:** Cascade Industrial Corp. (fictional manufacturer, 3 company codes:
+US, Germany, India) moves from SAP ECC to S/4HANA. Customers and vendors become
+Business Partners, and open AR/AP balances must reconcile to the cent.
 
-3. **03-data-quality-dashboard**  
-   - Data profiling and quality metrics dashboard  
-   - Visual reporting on data quality issues  
-   - Tools: Power BI / Tableau, SQL
+**How it works:**
 
-4. **04-sap-ps-migration**  
-   - SAP Project System (PS) migration script  
-   - WBS element migration and network activities  
-   - Tools: SQL, Python, LSMW concepts
+1. **Profile** the legacy data and find quality issues
+2. **AI suggests** field mappings, value mappings and data-quality rules, each with
+   a confidence score and reason
+3. **Consultant approves, edits or rejects** every suggestion, and each decision is logged
+4. **Validate and transform**, producing remediation reports for business owners
+5. **Generate load files** in Migration Cockpit-style templates
+6. **Reconcile** counts, keys and open-item totals by company code
+7. **Readiness report** with a go / no-go recommendation across Mock 1 → 3
+
+**Privacy by design:** the LLM runs locally and sees only metadata and profiles,
+never full records.
+
+**Progress**
+
+- [x] Requirements document – [01_requirements.md](02-ai-assisted-migration/docs/01_requirements.md)
+- [ ] Functional spec with numbered rules
+- [ ] SAP-style synthetic data with a logged list of injected defects
+- [ ] Data profiling and analysis report
+- [ ] AI mapping suggestions + consultant approval screen
+- [ ] Data-quality rules and remediation reports
+- [ ] Transformation and load files
+- [ ] Reconciliation and readiness report
+- [ ] Mock load simulation, tests and CI
+- [ ] Demo video and user guide
 
 ## Skills Demonstrated
-- SQL (complex joins, stored procedures, ETL scripts)  
-- Python for data cleaning and transformation  
-- Data mapping and transformation logic  
-- Data quality assessment and reconciliation  
-- ERP data migration methodology (SAP Finance & PS)  
-- Git/GitHub for version control and portfolio hosting  
-- Familiarity with Syniti tools and data migration best practices
 
-## How to Use This Repo
-- Each project folder includes:
-  - `README.md` – problem statement, approach, and insights  
-  - `data/` – sample or anonymized datasets  
-  - `sql/` – queries and scripts  
-  - `python/` – transformation and ETL notebooks/scripts  
-  - `docs/` – documentation and mapping notes
+- SAP data migration lifecycle (discovery, design, build, mock loads, cutover)
+- SAP S/4HANA Business Partner, FI open items and reconciliation
+- Source-to-target mapping, value mapping and cross-references
+- Data profiling, data-quality rules and remediation reporting
+- Python (pandas), SQL, DuckDB, Streamlit, Pytest
+- Human-in-the-loop AI with a local LLM (Ollama)
+- Git/GitHub workflow with branches and pull requests
+
+## Repository Structure
+
+Each project folder contains:
+
+- `README.md` – problem, approach and results
+- `docs/` – requirements, functional spec, mapping and design documents
+- `data/` – synthetic datasets
+- `python/` or `src/` – transformation, validation and reconciliation code
+- `sql/` – queries and scripts
+
+## Data Disclaimer
+
+All data in this repository is **synthetic**. No client data, client documents or
+proprietary software from any employer or vendor is used or reproduced.
 
 ## Contact
-- Name: Elsa Kalliath  
-- Location: Englewood, Colorado, US  
-- Education: MS in Data Analytics (expected graduation May 2027)  
-- Current Role: Data Consultant at Syniti  
-- GitHub: [YOUR-USERNAME]  
-- LinkedIn: [YOUR-LINK]
 
----
-
-This portfolio is a work-in-progress and will be updated as I build new projects and deepen my skills in data migration, Syniti tools, and SAP ERP implementations.
+- **Name:** Elsa Rose
+- **Location:** San Francisco, CA
+- **GitHub:** [elsasjsu](https://github.com/elsasjsu)
+- **LinkedIn:** [add your LinkedIn URL]
+- **Email:** elsakalliath@gmail.com
